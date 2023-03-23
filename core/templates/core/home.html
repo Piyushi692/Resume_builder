@@ -1,0 +1,20 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+<div class="mt-5">
+    <div class="text-center">
+        <img src="{% static 'core/images/lady.jpg'%}" alt="profilepic" class="img-thumbnail" width="250px" height="150px">
+    </div>
+       <div class="mt-5 text-white mx-5 text-justify">
+        
+        <h2 class="font-weight-bold st-font">Hello,</h2>
+    
+    <div class="px-4" style="line-height:2rem;"><p style="text-indent:100px;">I am <b class="text-warning">Piyushi Patidar</b>currently persuing B.tech from chameli devi group of institution Indore in computer science and engineering.Recenlty I have started learning the web framework of python called django and this is the first project based on it,I am so curious to know more about it because I was constantly looking for a technology in which I give my interest so I am very happy to know more about the django.Apart form it I also have skills like <b class= "text-warning">c,c++,python and sql</b> ,I will also want to make a project with the help of mysql and django in future.
+    </p>
+</div>
+     <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>       
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a> 
+     </div>
+</div>
+{% endblock %}
